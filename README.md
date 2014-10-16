@@ -19,3 +19,4 @@
   Run your app:
 
     $ grunt
+
