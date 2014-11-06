@@ -1,6 +1,6 @@
 {
     "name": "dolphinio",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "preferGlobal": true,
     "description": "Simple command line interface for installing and managing Dolphin apps",
     "author": {
@@ -14,7 +14,8 @@
         "dolphin": "./bin/dolphin",
         "dolphin-init": "./bin/dolphin-init",
         "dolphin-package": "./bin/dolphin-package",
-        "dolphin-postinstall": "./bin/dolphin-postinstall"
+        "dolphin-postinstall": "./bin/dolphin-postinstall",
+        "dolphin-uninstall": "./bin/dolphin-uninstall"
     },
     "repository": {
         "type": "git",
