@@ -6,7 +6,7 @@
 
   Create a new app:
 
-    $ dolphinio init <NameOfYourApp>
+    $ dolphin init <NameOfYourApp>
 
   Install Dependencies:
 
@@ -14,7 +14,7 @@
 
   Create a sample package:
 
-    $ dolphinio package <NameOfYourPackage>
+    $ dolphin package <NameOfYourPackage>
 
   Run your app:
 
