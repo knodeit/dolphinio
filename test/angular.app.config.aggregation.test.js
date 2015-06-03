@@ -1,7 +1,12 @@
 'use strict';
 var dolphinio = require('../lib/dolphin');
 var Module = dolphinio.Module;
-var expect = require('chai').expect;
+var chai = require('chai');
+var chaiAsPromised = require("chai-as-promised");
+chai.use(chaiAsPromised);
+
+var expect = chai.expect;
+
 
 describe('APP_CONFIG ', function () {
     it('can be aggregated from all registered modules',
@@ -30,8 +35,8 @@ describe('APP_CONFIG ', function () {
             dolphinio.modules[module2.name] = {};
 
             var settings = dolphinio.aggregateAngularAppConfigConstantValue();
-            expect(settings).to.have.property(module1.name).that.deep.equals(settings1);
-            expect(settings).to.have.property(module2.name).that.deep.equals(settings2);
+            expect(settings).to.eventually.have.property(module1.name).that.deep.equals(settings1);
+            expect(settings).to.eventually.have.property(module2.name).that.deep.equals(settings2);
         });
 });
 
