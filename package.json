@@ -50,6 +50,7 @@
     "uglify-js": "^2.4.14"
   },
   "devDependencies": {
+    "chai": "^2.3.0",
     "grunt": "^0.4.4",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-mocha-test": "^0.10.0",
