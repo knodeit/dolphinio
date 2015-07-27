@@ -6,12 +6,11 @@ module.exports = function (grunt) {
     grunt.initConfig({
         mochaTest: {
             options: {
-                require: ['should'],
                 timeout: 3000,
                 ignoreLeaks: false,
                 reporter: 'spec'
             },
-            src: ['test/*/*.js']
+            src: ['test/**/*.js']
         },
         jshint: {
             options: {
