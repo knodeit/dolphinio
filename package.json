@@ -1,6 +1,6 @@
 {
   "name": "dolphinio",
-  "version": "0.1.14",
+  "version": "0.2.0",
   "preferGlobal": true,
   "description": "Simple command line interface for installing and managing Dolphin apps",
   "author": {
