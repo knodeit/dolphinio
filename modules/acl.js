@@ -22,6 +22,20 @@ module.exports = function (database) {
         },
         permissions: {
             type: Array
+        },
+        disabled: {
+            type: Array
+        },
+        auditing: {
+            createdAt: {type: Date, default: Date.now},
+            createdBy: {type: Schema.ObjectId, ref: 'User'},
+            lastUpdateAt: {type: Date, default: Date.now},
+            lastUpdateBy: {type: Schema.ObjectId, ref: 'User'},
+            deleted: {type: Boolean, default: false},
+            canbedeleted: {
+                type: Boolean,
+                default: true
+            }
         }
     });
 
