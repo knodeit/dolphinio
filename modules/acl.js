@@ -39,7 +39,7 @@ module.exports = function (database) {
         }
     });
 
-    AclSchema.index({role: 1, entity: 1}, {unique: 1});
+    AclSchema.index({role: 1, entity: 1, 'auditing.deleted': 1}, {unique: 1});
 
     AclSchema.statics.updateRow = function (_id, permissions) {
         var deferred = Q.defer();
