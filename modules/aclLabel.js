@@ -21,9 +21,16 @@ module.exports = function (database) {
         },
         labels: {
             type: Array
+        },
+        auditing: {
+            createdAt: {type: Date, default: Date.now},
+            createdBy: {type: Schema.ObjectId, ref: 'User'},
+            lastUpdateAt: {type: Date, default: Date.now},
+            lastUpdateBy: {type: Schema.ObjectId, ref: 'User'},
+            deleted: {type: Boolean, default: false}
         }
     });
 
-    AclLabelSchema.index({module: 1, name: 1}, {unique: 1});
+    AclLabelSchema.index({module: 1, name: 1, 'auditing.deleted': 1}, {unique: 1});
     database.connection.model('AclLabel', AclLabelSchema);
 };

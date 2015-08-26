@@ -1,6 +1,6 @@
 {
   "name": "dolphinio",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "preferGlobal": true,
   "description": "Simple command line interface for installing and managing Dolphin apps",
   "author": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/knodeit/dolphinio.git"
+    "url": "git+https://github.com/knodeit/dolphinio.git"
   },
   "keywords": [
     "dolphin",
@@ -65,11 +65,14 @@
   "bugs": {
     "url": "https://github.com/knodeit/dolphinio/issues"
   },
-  "_id": "dolphinio@0.1.14",
+  "_id": "dolphinio@0.2.0",
   "dist": {
     "shasum": "af88f736c592e77b1c4eaf3b6d15067265b8be2a"
   },
-  "_resolved": "git://github.com/knodeit/dolphinio#64b7fde38377c691625f6be43df84896b01ebbda",
-  "_from": "git://github.com/knodeit/dolphinio#develop",
-  "_fromGithub": true
+  "_resolved": "git://github.com/knodeit/dolphinio.git#cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
+  "_from": "knodeit/dolphinio#develop",
+  "_fromGithub": true,
+  "gitHead": "cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
+  "homepage": "https://github.com/knodeit/dolphinio#readme",
+  "_shasum": "4c52e470a8e8d791c0ad47fc8f2de16645e3a94c"
 }
