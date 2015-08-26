@@ -31,6 +31,6 @@ module.exports = function (database) {
         }
     });
 
-    AclLabelSchema.index({module: 1, name: 1, 'auditing.deleted': 1}, {unique: 1});
+    AclLabelSchema.index({module: 1, name: 1});
     database.connection.model('AclLabel', AclLabelSchema);
 };
