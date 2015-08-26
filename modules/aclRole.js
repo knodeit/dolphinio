@@ -32,7 +32,7 @@ module.exports = function (database) {
             }
         }
     });
-    AclRoleSchema.index({role: 1, 'auditing.deleted': 1}, {unique: 1});
+    AclRoleSchema.index({role: 1});
 
     AclRoleSchema.pre('save', function (next) {
         var $this = this;
