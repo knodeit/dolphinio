@@ -20,4 +20,4 @@ var options = {
     quick: program.quick
 };
 
-cli.init(program.args.length ? program.args[0] : 'dolphin', options);
+cli.install(program.args.length ? program.args[0] : 'dolphin', options);

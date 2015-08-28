@@ -1,10 +1,10 @@
 {
   "name": "dolphinio",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "preferGlobal": true,
-  "description": "Simple command line interface for installing and managing Dolphin apps",
+  "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
   "author": {
-    "name": "knodeit"
+    "name": "LPG Labs"
   },
   "contributors": [],
   "license": "AGPL",
@@ -61,7 +61,7 @@
     "should": "^3.2.0"
   },
   "readmeFilename": "README.md",
-  "readme": "## Basic Usage\n\n  Install Package:\n\n    $ [sudo] npm install -g dolphinio\n\n  Create a new app:\n\n    $ dolphin init <NameOfYourApp>\n\n  Install Dependencies:\n\n    $ cd <NameOfYourApp> && npm install\n\n  Create a sample package:\n\n    $ dolphin package <NameOfYourPackage>\n\n  Run your app:\n\n    $ grunt\n\n",
+  "readme": "## Basic Usage\n\n  Install Package:\n\n    $ [sudo] npm package -g dolphinio\n\n  Create a new dolphin application:\n\n    $ dolphin install <NameOfYourApp>\n\n  Install Dependencies:\n\n    $ cd <NameOfYourApp> && npm install\n\n  Create a sample package:\n\n    $ dolphin package <NameOfYourPackage>\n\n  Run your app:\n\n    $ grunt\n\n",
   "bugs": {
     "url": "https://github.com/knodeit/dolphinio/issues"
   },

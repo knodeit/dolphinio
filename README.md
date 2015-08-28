@@ -1,12 +1,12 @@
 ## Basic Usage
 
-  Install Package:
+  Install Dolphinio globally:
 
     $ [sudo] npm install -g dolphinio
 
-  Create a new app:
+  Create a new dolphin application:
 
-    $ dolphin init <NameOfYourApp>
+    $ dolphin install <NameOfYourApp>
 
   Install Dependencies:
 
