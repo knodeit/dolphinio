@@ -2,7 +2,7 @@
 
 'use strict';
 
-// MEAN CLI.
+
 var program = require('commander'),
     _ = require('lodash');
 
@@ -11,7 +11,7 @@ var version = require('../package').version;
 program.version(version, '-v, --version');
 
 program
-    .command('init <name> [options]', 'Create a Dolphin application in the current working directory')
+    .command('install <name> [options]', 'Create a Dolphin application in the current working directory')
     .command('package <name> [options]', 'package')
 
     .parse(process.argv);

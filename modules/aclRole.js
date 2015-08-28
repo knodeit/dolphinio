@@ -159,6 +159,15 @@ module.exports = function (database) {
         return deferred.promise;
     };
 
+    AclRoleSchema.statics.getRegistrationRole = function () {
+        var deferred = Q.defer();
+        var AclRole = database.connection.model('AclRole');
+        AclRole.findOne({registrationRole: true, 'auditing.deleted': false}).exec(function (err, row) {
+            deferred.resolve(row);
+        });
+        return deferred.promise;
+    };
+
     var AclRole = database.connection.model('AclRole', AclRoleSchema);
 
     //init

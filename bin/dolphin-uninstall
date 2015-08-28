@@ -6,7 +6,7 @@ var cli = require('../lib/cli'),
     program = require('commander');
 
 program
-    .description('Uninstalls a Dolphin module')
+    .description('Uninstalls a Dolphin package')
     .parse(process.argv);
 
 cli.uninstall(program.args.length ? program.args[0] : 'empty');
