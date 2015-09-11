@@ -62,9 +62,9 @@ module.exports = function (database) {
     };
 
     AclRoleSchema.path('role').validate(function (value) {
-        var patt = new RegExp('^[a-zA-Z_]{1,20}$', 'i');
+        var patt = new RegExp('^[a-zA-Z_]{1,60}$', 'i');
         return patt.test(value);
-    }, 'Role must be a-z_ from 1 to 20 characters long');
+    }, 'Role must be a-z_ from 1 to 60 characters long');
 
     AclRoleSchema.path('role').validate(function (value, callback) {
         var AclRole = database.connection.model('AclRole');
