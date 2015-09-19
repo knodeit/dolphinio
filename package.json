@@ -1,6 +1,6 @@
 {
   "name": "dolphinio",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "preferGlobal": true,
   "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
   "author": {
