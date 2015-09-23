@@ -1,6 +1,7 @@
 {
     "name": "__pkgName__",
     "version": "0.0.1",
+    "core":"false",
     "description": "decription of __pkgName__",
     "author": {
         "name": "__author__"
