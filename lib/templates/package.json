@@ -2,10 +2,9 @@
     "name": "__pkgName__",
     "version": "0.0.1",
     "core":"false",
-    "description": "decription of __pkgName__",
-    "author": {
-        "name": "__author__"
-    },
+    "description": "short decription of __pkgName__",
+    "author":  "LPG Labs" ,
+    "documentation":"http://www.lamppostlabs.com/dolphin/__pkgName__",
     "dolphin": "__version__",
     "engines": {
         "node": "0.10.x",

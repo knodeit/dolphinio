@@ -1,11 +1,9 @@
 {
   "name": "dolphinio",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "preferGlobal": true,
   "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
-  "author": {
-    "name": "LPG Labs"
-  },
+  "author":  "LPG Labs" ,
   "contributors": [],
   "license": "AGPL",
   "main": "index",
