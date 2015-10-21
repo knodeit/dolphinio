@@ -1,77 +1,77 @@
 {
-  "name": "dolphinio",
-  "version": "1.1.2",
-  "preferGlobal": true,
-  "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
-  "author": {
-    "name": "LPG Labs"
-  },
-  "contributors": [],
-  "license": "AGPL",
-  "main": "index",
-  "bin": {
-    "dolphin": "./bin/dolphin",
-    "dolphin-install": "./bin/dolphin-install",
-    "dolphin-package": "./bin/dolphin-package",
-    "dolphin-postinstall": "./bin/dolphin-postinstall",
-    "dolphin-uninstall": "./bin/dolphin-uninstall"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/knodeit/dolphinio.git"
-  },
-  "keywords": [
-    "dolphin",
-    "dolphinio",
-    "dolphin.io",
-    "dolphin-cli"
-  ],
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.4.x"
-  },
-  "dependencies": {
-    "bluebird": "~2.9.27",
-    "bower": "~1.3.8",
-    "chalk": "~1.1.1",
-    "commander": "2.2.0",
-    "dependable": "~0.2.5",
-    "express": "~4.12.x",
-    "glob": "~4.0.3",
-    "lodash": "~2.4.1",
-    "npm": "~1.4.7",
-    "opener": "~1.3.0",
-    "prompt": "0.2.13",
-    "q": "~1.4.1",
-    "request": "~2.65.0",
-    "shelljs": "~0.3.0",
-    "swig": "~1.3.2",
-    "uglify-js": "~2.4.14",
-    "async": "~1.2.1"
-  },
-  "devDependencies": {
-    "chai": "~2.3.0",
-    "chai-as-promised": "~5.0.0",
-    "grunt": "~0.4.4",
-    "grunt-contrib-jshint": "~0.10.0",
-    "grunt-mocha-test": "~0.10.0",
-    "mocha": "~1.18.2",
-    "should": "~3.2.0"
-  },
-  "readmeFilename": "README.md",
-  "readme": "## Basic Usage\n\n  Install Package:\n\n    $ [sudo] npm package -g dolphinio\n\n  Create a new dolphin application:\n\n    $ dolphin install <NameOfYourApp>\n\n  Install Dependencies:\n\n    $ cd <NameOfYourApp> && npm install\n\n  Create a sample package:\n\n    $ dolphin package <NameOfYourPackage>\n\n  Run your app:\n\n    $ grunt\n\n",
-  "bugs": {
-    "url": "https://github.com/knodeit/dolphinio/issues"
-  },
-  "_id": "dolphinio@1.1.0",
-  "dist": {
-    "shasum": "af88f736c592e77b1c4eaf3b6d15067265b8be2a"
-  },
-  "_resolved": "git://github.com/knodeit/dolphinio.git#cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
-  "_from": "knodeit/dolphinio#develop",
-  "_fromGithub": true,
-  "gitHead": "cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
-  "homepage": "https://github.com/knodeit/dolphinio#readme",
-  "_shasum": "97c1718245ebac26a177cc83c9db4a0903fe470b",
-  "scripts": {}
+    "name": "dolphinio",
+    "version": "1.1.3",
+    "preferGlobal": true,
+    "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
+    "author": {
+        "name": "LPG Labs"
+    },
+    "contributors": [],
+    "license": "AGPL",
+    "main": "index",
+    "bin": {
+        "dolphin": "./bin/dolphin",
+        "dolphin-install": "./bin/dolphin-install",
+        "dolphin-package": "./bin/dolphin-package",
+        "dolphin-postinstall": "./bin/dolphin-postinstall",
+        "dolphin-uninstall": "./bin/dolphin-uninstall"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/knodeit/dolphinio.git"
+    },
+    "keywords": [
+        "dolphin",
+        "dolphinio",
+        "dolphin.io",
+        "dolphin-cli"
+    ],
+    "engines": {
+        "node": "0.10.x",
+        "npm": "1.4.x"
+    },
+    "dependencies": {
+        "bluebird": "~2.9.27",
+        "bower": "~1.3.8",
+        "chalk": "~1.1.1",
+        "commander": "2.2.0",
+        "dependable": "~0.2.5",
+        "express": "~4.12.x",
+        "glob": "~4.0.3",
+        "lodash": "~2.4.1",
+        "npm": "~1.4.7",
+        "opener": "~1.3.0",
+        "prompt": "0.2.13",
+        "q": "~1.4.1",
+        "request": "~2.65.0",
+        "shelljs": "~0.3.0",
+        "swig": "~1.3.2",
+        "uglify-js": "~2.4.14",
+        "async": "~1.2.1"
+    },
+    "devDependencies": {
+        "chai": "~2.3.0",
+        "chai-as-promised": "~5.0.0",
+        "grunt": "~0.4.4",
+        "grunt-contrib-jshint": "~0.10.0",
+        "grunt-mocha-test": "~0.10.0",
+        "mocha": "~1.18.2",
+        "should": "~3.2.0"
+    },
+    "readmeFilename": "README.md",
+    "readme": "## Basic Usage\n\n  Install Package:\n\n    $ [sudo] npm package -g dolphinio\n\n  Create a new dolphin application:\n\n    $ dolphin install <NameOfYourApp>\n\n  Install Dependencies:\n\n    $ cd <NameOfYourApp> && npm install\n\n  Create a sample package:\n\n    $ dolphin package <NameOfYourPackage>\n\n  Run your app:\n\n    $ grunt\n\n",
+    "bugs": {
+        "url": "https://github.com/knodeit/dolphinio/issues"
+    },
+    "_id": "dolphinio@1.1.0",
+    "dist": {
+        "shasum": "af88f736c592e77b1c4eaf3b6d15067265b8be2a"
+    },
+    "_resolved": "git://github.com/knodeit/dolphinio.git#cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
+    "_from": "knodeit/dolphinio#develop",
+    "_fromGithub": true,
+    "gitHead": "cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
+    "homepage": "https://github.com/knodeit/dolphinio#readme",
+    "_shasum": "97c1718245ebac26a177cc83c9db4a0903fe470b",
+    "scripts": {}
 }
