@@ -1,6 +1,6 @@
 {
   "name": "dolphinio",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "preferGlobal": true,
   "description": "Simple command line interface for installing and managing Dolphin applications, which are complete mean stack applications that work.",
   "author": {
@@ -72,6 +72,6 @@
   "_fromGithub": true,
   "gitHead": "cdb21b560f7ac445d43832272f7598a2e3fe2a4b",
   "homepage": "https://github.com/knodeit/dolphinio#readme",
-  "_shasum": "e0bb497bd36d67dac54ec7d873a3f686eef45388",
+  "_shasum": "97c1718245ebac26a177cc83c9db4a0903fe470b",
   "scripts": {}
 }
