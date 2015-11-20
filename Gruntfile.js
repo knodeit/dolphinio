@@ -4,14 +4,6 @@ module.exports = function (grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        mochaTest: {
-            options: {
-                timeout: 3000,
-                ignoreLeaks: false,
-                reporter: 'spec'
-            },
-            src: ['test/**/*.js']
-        },
         jshint: {
             options: {
                 jshintrc: true
@@ -21,9 +13,8 @@ module.exports = function (grunt) {
     });
 
     // Load grunt plugins for modules
-    grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
     // Register tasks
-    grunt.registerTask('default', ['jshint', 'mochaTest']);
+    grunt.registerTask('default', ['jshint']);
 };
