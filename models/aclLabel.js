@@ -22,7 +22,7 @@ module.exports = function (database) {
         labels: {
             type: Array
         }
-    });
+    },{collection: 'kn_acl_labels'});
 
     AclLabelSchema.index({module: 1, name: 1});
     database.connection.model('AclLabel', AclLabelSchema);

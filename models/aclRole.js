@@ -20,7 +20,7 @@ module.exports = function (database) {
             type: Boolean,
             default: false
         }
-    });
+    },{collection: 'kn_acl_roles'});
     AclRoleSchema.index({role: 1});
 
     AclRoleSchema.pre('save', function (next) {

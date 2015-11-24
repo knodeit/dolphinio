@@ -13,6 +13,6 @@ module.exports = function (database) {
             type: Date,
             default: Date.now
         }
-    });
+    },{collection: 'kn_packages'});
     database.connection.model('Package', PackageSchema);
 };
