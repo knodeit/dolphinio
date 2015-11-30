@@ -157,36 +157,5 @@ module.exports = function (database) {
         return deferred.promise;
     };
 
-    var AclRole = database.connection.model('AclRole', AclRoleSchema);
-
-    //init
-    AclRole.count({}).exec(function (err, count) {
-        if (count > 0) {
-            return;
-        }
-
-        var rows = [
-            {
-                name: 'Administrator',
-                role: 'admin',
-                'auditing.canbedeleted': false
-            },
-            {
-                name: 'User',
-                role: 'user',
-                registrationRole: true,
-                'auditing.canbedeleted': false
-            },
-            {
-                name: 'Authenticated',
-                role: 'authenticated',
-                'auditing.canbedeleted': false
-            }
-        ];
-
-        for (var i in rows) {
-            var row = new AclRole(rows[i]);
-            row.save();
-        }
-    });
+    database.connection.model('AclRole', AclRoleSchema);
 };
