@@ -26,7 +26,7 @@ module.exports = function (database) {
         disabled: {
             type: Array
         }
-    });
+    },{collection: 'kn_acls'});
 
     AclSchema.index({role: 1, entity: 1});
 
