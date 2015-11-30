@@ -59,3 +59,4 @@ modules/views/
 /static/blog/
 /uploads/*
 /packages/custom/blog/public/images/blog/
+.idea
